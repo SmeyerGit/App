@@ -6,6 +6,10 @@ import {
   IconMoodHappy,
   IconTypography,
   IconUserPlus,
+  IconSoup,
+  IconChefHat,
+  IconSalad,
+
 } from "@tabler/icons-react";
 
 import { uniqueId } from "lodash";
@@ -18,19 +22,19 @@ const Menuitems = [
 
   {
     id: uniqueId(),
-    title: "Dashboard",
-    icon: IconLayoutDashboard,
+    title: "Nahrungsmittel",
+    icon: IconSalad,
     href: "/",
+  },
+  {
+    id: uniqueId(),
+    title: "Gerichte",
+    icon: IconChefHat,
+    href: "/utilities/typography",
   },
   {
     navlabel: true,
     subheader: "Utilities",
-  },
-  {
-    id: uniqueId(),
-    title: "Typography",
-    icon: IconTypography,
-    href: "/utilities/typography",
   },
   {
     id: uniqueId(),

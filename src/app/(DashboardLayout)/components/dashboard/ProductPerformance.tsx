@@ -13,47 +13,75 @@ import DashboardCard from '@/app/(DashboardLayout)//components/shared/DashboardC
 const products = [
     {
         id: "1",
-        name: "Sunil Joshi",
-        post: "Web Designer",
-        pname: "Elite Admin",
-        priority: "Low",
-        pbg: "primary.main",
-        budget: "3.9",
+        name: "Apfel",
+        post: "Obst, Frucht",
+        pname: "Obst, Frucht",
+        priority: "Gut",
+        pbg: "success.main",
+        budget: "",
     },
     {
         id: "2",
-        name: "Andrew McDownland",
-        post: "Project Manager",
-        pname: "Real Homes WP Theme",
-        priority: "Medium",
-        pbg: "secondary.main",
-        budget: "24.5",
+        name: "Hafer",
+        post: "Getreide, Korn",
+        pname: "Getreide, Korn",
+        priority: "Schlecht",
+        pbg: "error.main",
+        budget: "Durchfall",
     },
     {
         id: "3",
-        name: "Christopher Jamil",
-        post: "Project Manager",
-        pname: "MedicalPro WP Theme",
-        priority: "High",
-        pbg: "error.main",
-        budget: "12.8",
+        name: "Weizen",
+        post: "Getreide, Korn",
+        pname: "Getreide, Korn",
+        priority: "Gut",
+        pbg: "success.main",
+        budget: "",
     },
     {
         id: "4",
-        name: "Nirav Joshi",
-        post: "Frontend Engineer",
-        pname: "Hosting Press HTML",
-        priority: "Critical",
-        pbg: "success.main",
-        budget: "2.4",
+        name: "Käse",
+        post: "Käse, Milchprodukt",
+        pname: "Käse, Milchprodukt",
+        priority: "Schlecht",
+        pbg: "error.main",
+        budget: "",
     },
+    {
+        id: "5",
+        name: "Salami",
+        post: "Fleisch",
+        pname: "Fleisch",
+        priority: "Schlecht",
+        pbg: "error.main",
+        budget: "",
+    },
+    {
+        id: "6",
+        name: "Parmesan",
+        post: "Käse, Milchprodukt",
+        pname: "Käse, Milchprodukt",
+        priority: "Schlecht",
+        pbg: "error.main",
+        budget: "",
+    },
+    {
+        id: "7",
+        name: "Firschkäse",
+        post: "Käse, Milchprodukt",
+        pname: "Käse, Milchprodukt",
+        priority: "Schlecht",
+        pbg: "error.main",
+        budget: "",
+    },
+    
 ];
 
 
 const ProductPerformance = () => {
     return (
 
-        <DashboardCard title="Product Performance">
+        <DashboardCard title="Nahrungsmittel">
             <Box sx={{ overflow: 'auto', width: { xs: '280px', sm: 'auto' } }}>
                 <Table
                     aria-label="simple table"
@@ -71,22 +99,22 @@ const ProductPerformance = () => {
                             </TableCell>
                             <TableCell>
                                 <Typography variant="subtitle2" fontWeight={600}>
-                                    Assigned
+                                    Nahrungsmittel
                                 </Typography>
                             </TableCell>
                             <TableCell>
                                 <Typography variant="subtitle2" fontWeight={600}>
-                                    Name
+                                    Kategorie
                                 </Typography>
                             </TableCell>
                             <TableCell>
                                 <Typography variant="subtitle2" fontWeight={600}>
-                                    Priority
+                                    Verträglichkeit
                                 </Typography>
                             </TableCell>
                             <TableCell align="right">
                                 <Typography variant="subtitle2" fontWeight={600}>
-                                    Budget
+                                    Notiz
                                 </Typography>
                             </TableCell>
                         </TableRow>
@@ -143,7 +171,7 @@ const ProductPerformance = () => {
                                     ></Chip>
                                 </TableCell>
                                 <TableCell align="right">
-                                    <Typography variant="h6">${product.budget}k</Typography>
+                                    <Typography variant="h6">{product.budget}</Typography>
                                 </TableCell>
                             </TableRow>
                         ))}
